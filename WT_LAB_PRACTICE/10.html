@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn</title>
+    <style>
+        body{
+            background-color:rgb(241, 239, 236);
+            font-family: serif;
+        }
+        .align-center{
+            justify-content: center;
+            text-align: center;
+        }
+        .container{
+            justify-content: center;
+            width: 25%;
+            box-shadow: 2px;
+            background-color: white;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        img{
+            width: 220px;
+            height: 125px;
+        }
+        h2{
+            text-align: center;
+            font-family: sans-serif;
+            font-weight: lighter;
+        }
+        input{
+            width: 90%;
+            height: 25px;
+            margin-left: 20px;
+            margin-top: 5px;
+            border-radius: 3px;
+            border-width: 1px;
+
+        }
+        label{
+            text-align: left;
+            margin-left: 20px;
+            font-family: serif;
+            font-weight: lighter;
+        }
+        p{
+            margin-left: 20px;
+        }
+        h1{
+            font-size: small;
+            color: white;
+        }
+        button{
+            background-color: #0A66C2;
+            text-align: center;
+            margin-left: 20px;
+            border-radius: 20px;
+            width: 90%;
+            height: 20%;
+        }
+        fieldset{
+            text-align: center;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+        }
+        #p1{
+            text-align: center;
+        }
+        #img1{
+            width: 20px; 
+            height: 18px; 
+            float: left; 
+            padding: 10px; 
+            margin-left: 60px;
+            display: flex;
+            justify-content: center;
+            padding-left: 36px;
+        }
+        span{
+            color:#0A66C2;
+        }
+    </style>
+</head>
+<body>
+    <div class="align-center">
+        <img src="Logo-Linkedin.png" alt="LinkedIn">
+    </div>
+    <h2>Make the most of your professional life</h2>
+    <div class="container">
+        <form action="myHtml.html">
+            <label for="E-mail">E-mail</label><br>
+            <input type="text" name="email" id="email" required><br><br>
+            <label for="password">Password (6 charecters minimum)</label>
+            <input type="password" name="password" id="password" required>
+            <p> By clicking Accept and register, you agree to the <span>Terms of Use,</span> the <span>Privacy Policy</span> and <span>cookies Policy</span> LinkedIn.</p>
+            <button type="button">
+                <h1>Accept and Register</h1>
+            </button>
+            <br><br>
+            <fieldset>  
+                <legend>or</legend>
+            </fieldset>
+            <button type="button" style="background-color: white;">
+                <img src="http://pluspng.com/img-png/google-logo-png-open-2000.png" alt="google" id="img1">
+                <h1 style="text-align: center; color: #0A66C2; padding-right: 70px; line-height: 1.6;">Sign up with Google</h1>
+            </button>
+            <br>
+            <p id="p1">Already Registered? <span>Login</span></p>
+        </form>
+    </div>
+</body>
+</html>
